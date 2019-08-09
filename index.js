@@ -39,6 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
        let description = document.createElement("h3");
        title.innerText = movie.title;
        description.innerText = movie.description;
+       div.appendChild(title)
+       div.appendChild(description)
        
        }
        body.appendChild(div)
