@@ -12,7 +12,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  
+  fetch('https://ghibliapi.herokuapp.com/films')
+    .then(res => res.json())
+    .then(res => {
+      // debugger;
+      let body = document.querySelector('body');
+      let select = document.createElement('select');
+      body.appendChild(select)
+
+      res.forEach(movieObj => {
+       let option = document.createElement("option");
+       let title = movieObj.title;
+       option.innerText = title;
+       select.appendChild(option)
+     })
+
+     return res;
+   })
 });
 
 // document.addEventListener("DOMContentLoaded", () => {
