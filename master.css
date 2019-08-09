@@ -1,0 +1,12 @@
+.colorDiv {
+  height: 100px;
+  width: 100px;
+}
+
+.redClass {
+  background: red;
+}
+
+.greenClass {
+  background: green;
+}
