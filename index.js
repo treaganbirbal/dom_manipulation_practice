@@ -1,3 +1,19 @@
+document.addEventListener('DOMContentLoaded', () => {
+  let button = document.querySelector('button');
+
+  button.addEventListener("click", () =>{
+    let colorDiv = document.querySelector('.colorDiv');
+    if(colorDiv.classList.value.includes('redClass')){
+      colorDiv.classList.remove('redClass')
+      colorDiv.classList.add('greenClass')
+    } else {
+      colorDiv.classList.add('redClass')
+      colorDiv.classList.remove('greenClass')
+    }
+  });
+
+  
+});
 
 // document.addEventListener("DOMContentLoaded", () => {
 //   let button = document.querySelector("button");
