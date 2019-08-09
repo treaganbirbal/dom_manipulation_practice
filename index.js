@@ -32,6 +32,13 @@ document.addEventListener('DOMContentLoaded', () => {
    .then(res => {
      let select = document.querySelector("select");
      select.addEventListener("change", (e) => {
+       let movie = res.find(el => el.title === e.target.value)
+       let div = document.createElement("div")
+       div.classList.add("displayDiv")
+       let title = document.createElement("h1")
+       let description = document.createElement("h3");
+       title.innerText = movie.title;
+       description.innerText = movie.description;
        
        }
        body.appendChild(div)
