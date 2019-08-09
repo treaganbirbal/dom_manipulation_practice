@@ -29,6 +29,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
      return res;
    })
+   .then(res => {
+     let select = document.querySelector("select");
+     select.addEventListener("change", (e) => {
+       
+       }
+       body.appendChild(div)
+     })
+   })
+   .catch(err => err)
 });
 
 // document.addEventListener("DOMContentLoaded", () => {
